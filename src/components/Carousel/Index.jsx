@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Styles from "./Styles.module.css";
+import { BackIcon, ForwardIcon } from "../../Icons/HomeIcon";
 
 const images = [
   "images/shop-hero-1-product-slide-1.png",
@@ -29,19 +30,23 @@ const Carousel = () => {
 
   return (
     <div className={Styles.carousel_container}>
-      <button onClick={goToPrev} className={Styles.nav_button}>
-        ‹
-      </button>
-
-      <img
-        src={images[currentIndex]}
-        alt={`Slide ${currentIndex + 1}`}
-        className={Styles.carousel_image}
-      />
-
-      <button onClick={goToNext} className={Styles.nav_button}>
-        ›
-      </button>
+      <div>
+        <img
+          src={images[currentIndex]}
+          alt={`Slide ${currentIndex + 1}`}
+          className={Styles.carousel_image}
+        />
+        <div className={Styles.text_container}>
+          <h5>T-shirt / Tops</h5>
+          <h1>Summer Value Pack</h1>
+          <h4>cool / colorful / comfy</h4>
+          <button type="button">Shop Now</button>
+        </div>
+      </div>
+      <div className={Styles.button_container}>
+        <BackIcon onClick={goToPrev} />
+        <ForwardIcon onClick={goToNext} />
+      </div>
 
       <div className={Styles.dots_container}>
         {images.map((_, idx) => (

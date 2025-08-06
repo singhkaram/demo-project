@@ -3,3 +3,64 @@
   max-width: 1449px;
   width: 100%;
 }
+
+.carousel_container {
+  position: relative;
+  max-width: 1449px;
+  width: 100%;
+}
+.button_container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 40px;
+}
+.text_container {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  max-width: 517px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.text_container h5 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37.77px;
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.text_container h4 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 47.21px;
+  letter-spacing: 0.31px;
+  color: #ffffff;
+}
+.text_container h1 {
+  font-weight: 700;
+  font-size: 78px;
+  line-height: 93.62px;
+  letter-spacing: 0.31px;
+  color: #ffffff;
+}
+.text_container button {
+  max-width: 266px;
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 8px;
+  background: #ffffff;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  text-align: center;
+  vertical-align: middle;
+  color: #3c4242;
+}

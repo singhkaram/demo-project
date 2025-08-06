@@ -32,3 +32,12 @@ a {
   color: inherit;
   cursor: pointer;
 }
+
+li {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
